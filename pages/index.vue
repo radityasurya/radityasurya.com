@@ -1,11 +1,12 @@
 <template>
-  <div></div>
+  <div>
+    <h2>Test</h2>
+  </div>
 </template>
-
-<style lang="scss" scoped>
-</style>
-
 
 <script>
 export default {};
 </script>
+
+<style>
+</style>

@@ -4,8 +4,7 @@ module.exports = {
    */
   head: {
     title: "radityasurya.com",
-    meta: [
-      {
+    meta: [{
         charset: "utf-8"
       },
       {
@@ -18,13 +17,11 @@ module.exports = {
         content: "Personal website"
       }
     ],
-    link: [
-      {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
-      }
-    ]
+    link: [{
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/favicon.ico"
+    }]
   },
   /*
    ** Customize the progress bar color
@@ -34,7 +31,12 @@ module.exports = {
   },
   css: [
     "element-ui/lib/theme-chalk/reset.css",
-    "element-ui/lib/theme-chalk/index.css"
+    "element-ui/lib/theme-chalk/index.css",
+    "normalize.css",
+    "@/assets/scss/main.scss"
+  ],
+  modules: [
+    ['nuxt-sass-resources-loader', '@/assets/scss/main.scss'],
   ],
 
   plugins: ["@/plugins/element-ui"],
@@ -45,7 +47,10 @@ module.exports = {
     /*
      ** Run ESLint on save
      */
-    extend(config, { isDev, isClient }) {
+    extend(config, {
+      isDev,
+      isClient
+    }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: "pre",
