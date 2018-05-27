@@ -1,9 +1,11 @@
 <template>
-  <el-container>
-    <el-header>Header</el-header>
-    <el-main>Main</el-main>
-    <el-footer>Footer</el-footer>
-  </el-container>
+  <div>
+    <app-header></app-header>
+    <el-main>
+      <nuxt/>
+    </el-main>
+    <el-footer><p>Designed and Coded by <a href="https://radityasurya.com/">Raditya Surya Pratama</a></p></el-footer>
+  </div>
 </template>
 
 <script>
@@ -22,13 +24,15 @@ body {
   margin: 0;
 }
 
-.el-header,
 .el-footer {
   background-color: #ffffff;
   color: #000;
   text-align: center;
-  line-height: 60px;
+  p {
+    line-height: 60px;
+  }
 }
+
 body > .el-container {
   margin-bottom: 40px;
 }
