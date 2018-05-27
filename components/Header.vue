@@ -1,40 +1,150 @@
 <template>
-  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-    <el-menu-item index="1">Processing Center</el-menu-item>
-    <el-submenu index="2">
-      <template slot="title">Workspace</template>
-      <el-menu-item index="2-1">item one</el-menu-item>
-      <el-menu-item index="2-2">item two</el-menu-item>
-      <el-menu-item index="2-3">item three</el-menu-item>
-      <el-submenu index="2-4">
-        <template slot="title">item four</template>
-        <el-menu-item index="2-4-1">item one</el-menu-item>
-        <el-menu-item index="2-4-2">item two</el-menu-item>
-        <el-menu-item index="2-4-3">item three</el-menu-item>
-      </el-submenu>
-    </el-submenu>
-    <el-menu-item index="3" disabled>Info</el-menu-item>
-    <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">Orders</a></el-menu-item>
-  </el-menu>
+  <el-header id="navbar">
+    <div class="container">
+      <nav role="navigation">
+        <ul class="menu">
+          <li class="menu__item"><nuxt-link to="/" exact>About</nuxt-link></li>
+          <li class="menu__item"><nuxt-link to="/blog">Blog</nuxt-link></li>
+          <li class="menu__item"><nuxt-link to="/skills">Skills</nuxt-link></li>
+          <li class="menu__item"><nuxt-link to="/projects">Projects</nuxt-link></li>
+        </ul>
+      </nav>
+      <div class="navbar-logo">
+        <a href="/" class="logo navbar-btn">Raditya</a>
+      </div>
+      <div class="navbar-cta">
+        <a class="navbar-btn">Contact</a>
+      </div>
+    </div>
+  </el-header>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      activeIndex: "1",
-      activeIndex2: "1"
-    };
-  },
-  methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath);
-    }
-  }
-};
+export default {};
 </script>
 
-
-
 <style lang="scss" scoped>
+.el-header {
+  background-color: #ffffff;
+  color: #000;
+  padding: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#navbar {
+  transition: top 0.2s ease-in-out;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.navbar-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    transition: all 0.2s ease-out;
+    font-family: "proxima-nova", sans-serif;
+
+    &:hover {
+      color: #666;
+    }
+  }
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin: 0;
+    padding: 0 15px;
+    list-style: none;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+
+    a {
+      font-size: 18px;
+      line-height: 60px;
+      font-weight: 700;
+      color: #999;
+      transition: all 0.2s ease-out;
+      display: block;
+      &:hover {
+        color: #000;
+      }
+    }
+
+    &--active {
+      transition: all 0.2s ease-out;
+      color: #000 !important;
+
+      a {
+        line-height: 59px;
+        color: #000;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #000;
+      }
+    }
+  }
+}
+
+.navbar-cta {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 60px;
+  cursor: pointer;
+
+  a {
+    margin-right: 15px;
+    border-radius: 3px;
+
+    color: #000;
+    font-weight: 700;
+
+    &:after {
+      display: inline-block;
+      content: "";
+      margin-top: 10px;
+      margin-left: 10px;
+      background-image: url("~/assets/icons/arrow.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 17px;
+      width: 20px;
+    }
+  }
+}
 </style>
