@@ -1,11 +1,17 @@
 <template>
   <div>
-    <h2>About</h2>
+    <profile></profile>
   </div>
 </template>
 
 <script>
-export default {};
+import profile from "~/components/Profile";
+
+export default {
+  components: {
+    profile
+  }
+};
 </script>
 
 <style>
