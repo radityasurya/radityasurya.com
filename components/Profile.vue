@@ -1,6 +1,6 @@
 <template>
-  <el-row :gutter="20">
-    <el-col id="profile" class="profile" :sm="6" :md="6" :lg="6" :xl="6">
+  <el-row>
+    <el-col class="profile">
       <div class="profile__container">
         <el-row>
           <el-col :span="24">
@@ -15,9 +15,9 @@
               </el-col>
               <el-col :span="24">
                 <div class="profile__info">
-                  <h1>{{name}}</h1>
-                  <h3>{{description}}</h3>
-                  <h5>{{location}}</h5>
+                  <h1 class="profile__info-name">{{name}}</h1>
+                  <p class="profile__info-desc">{{description}}</p>
+                  <p class="profile__info-location">{{location}}</p>
                 </div>
               </el-col>
             </el-row>
@@ -49,16 +49,13 @@ export default {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     overflow: hidden;
-    // border: 1px solid #ffffff;
     background-color: #ffffff;
     &:hover {
-      // box-shadow: 0 2px 3px 0 hsla(0, 0%, 0%, 0.05);
-      // border: 1px solid #409eff;
       box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     }
   }
   &__cover {
-    min-height: 180px;
+    min-height: 120px;
     background: #dde0e3;
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     // background: url("/cover.png");
@@ -66,24 +63,28 @@ export default {
     background-size: cover;
   }
   &__info {
+    margin-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+    font-family: "Open Sans", Helvetica, sans-serif;
     h1 {
-      font-size: 24px;
+      font-size: 1.5em;
       line-height: 32px;
+      font-weight: bold;
       color: rgba(0, 0, 0, 0.9);
+      margin-bottom: 0;
     }
-    h3 {
-      line-height: 24px;
-      color: rgba(0, 0, 0, 0.65);
-    }
-    h5 {
-      line-height: 24px;
-      color: rgba(0, 0, 0, 0.45);
+    &-location,
+    &-desc {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: "Roboto", sans-serif;
+      color: #9299a0;
+      font-size: 14px;
     }
   }
   .avatar {
-    margin-top: -94px;
+    margin-top: -80px;
     margin-left: 0;
     display: flex;
     align-items: center;

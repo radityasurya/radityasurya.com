@@ -2,11 +2,15 @@
   <el-header id="navbar">
     <div class="container">
       <nav role="navigation">
-        <ul class="menu">
+        <ul class="menu hidden-md-and-down">
           <li class="menu__item"><nuxt-link to="/" exact>About</nuxt-link></li>
           <li class="menu__item"><nuxt-link to="/blog">Blog</nuxt-link></li>
           <li class="menu__item"><nuxt-link to="/skills">Skills</nuxt-link></li>
           <li class="menu__item"><nuxt-link to="/projects">Projects</nuxt-link></li>
+        </ul>
+
+        <ul class="menu hidden-md-and-up">
+          <li class="menu__item"><nuxt-link to="/" exact>Menu</nuxt-link></li>
         </ul>
       </nav>
       <div class="navbar-logo">
