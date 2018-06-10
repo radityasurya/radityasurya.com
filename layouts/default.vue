@@ -29,15 +29,15 @@ body {
 }
 
 .el-main {
+  margin-top: 75px;
   display: flex;
   align-content: center;
   justify-content: center;
-  min-height: 500px;
-  padding: 35px;
+  min-height: 800px;
 }
 
 .container {
-  width: 95%;
+  width: 90%;
 }
 
 .el-footer {

@@ -3,7 +3,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: "radityasurya.com",
+    title: "Raditya Surya",
     meta: [{
         charset: "utf-8"
       },
@@ -20,7 +20,7 @@ module.exports = {
     link: [{
         rel: "icon",
         type: "image/x-icon",
-        href: "/favicon.ico"
+        href: "/favicon.png"
       },
       {
         rel: "stylesheet",
@@ -71,5 +71,6 @@ module.exports = {
   router: {
     linkActiveClass: 'menu__item--active'
   },
+  mode: 'spa'
 
 };

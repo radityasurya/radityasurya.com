@@ -3,7 +3,7 @@
     <el-col class="profile">
       <card title="about">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac aliquam metus, a commodo justo. Curabitur nec nulla porttitor, malesuada ex sit amet, vehicula est. Proin porttitor ut nulla ullamcorper blandit.
+          As a developer and designer, I write code that follow the best practices and able to transform that into interactively beautiful and fully functional interfaces.
         </p>
       </card>
     </el-col>
@@ -22,5 +22,8 @@ export default {
 
 
 <style lang="scss" scoped>
+.profile {
+  margin-bottom: 35px;
+}
 </style>
 
