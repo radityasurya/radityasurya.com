@@ -9,12 +9,12 @@
           <li class="menu__item">
             <nuxt-link to="/blogs">Blog</nuxt-link>
           </li>
-          <li class="menu__item">
+          <!-- <li class="menu__item">
             <nuxt-link to="/skills">Skills</nuxt-link>
           </li>
           <li class="menu__item">
             <nuxt-link to="/projects">Projects</nuxt-link>
-          </li>
+          </li> -->
         </ul>
 
         <ul class="menu hidden-md-and-up">
@@ -25,9 +25,9 @@
             <transition name="slide-y">
               <div v-if="opened" class="dropdown-content">
                 <router-link active-class="dropdown-active" to="/" exact>About</router-link>
-                <router-link active-class="dropdown-active" to="/blog">Blog</router-link>
-                <router-link active-class="dropdown-active" to="/skills">Skills</router-link>
-                <router-link active-class="dropdown-active" to="/project">Projects</router-link>
+                <router-link active-class="dropdown-active" to="/blogs">Blog</router-link>
+                <!-- <router-link active-class="dropdown-active" to="/skills">Skills</router-link>
+                <router-link active-class="dropdown-active" to="/project">Projects</router-link> -->
               </div>
             </transition>
           </li>

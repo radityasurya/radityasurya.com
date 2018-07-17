@@ -77,7 +77,6 @@ export default {
     }
 
     &-title {
-      font-family: "proxima-nova", sans-serif;
       font-size: 14px;
       font-size: 1.1em;
       font-weight: 600;
