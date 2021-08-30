@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/radityasurya.com/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/radityasurya.com/static/js/main.3984f762.chunk.js",
-    "main.js.map": "/radityasurya.com/static/js/main.3984f762.chunk.js.map",
+    "main.js": "/radityasurya.com/static/js/main.f6780752.chunk.js",
+    "main.js.map": "/radityasurya.com/static/js/main.f6780752.chunk.js.map",
     "runtime-main.js": "/radityasurya.com/static/js/runtime-main.a76d2fd3.js",
     "runtime-main.js.map": "/radityasurya.com/static/js/runtime-main.a76d2fd3.js.map",
     "static/js/2.e5642694.chunk.js": "/radityasurya.com/static/js/2.e5642694.chunk.js",
@@ -11,13 +11,12 @@
     "static/js/3.b0d5b6cf.chunk.js.map": "/radityasurya.com/static/js/3.b0d5b6cf.chunk.js.map",
     "index.html": "/radityasurya.com/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/radityasurya.com/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.e5642694.chunk.js.LICENSE.txt": "/radityasurya.com/static/js/2.e5642694.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/radityasurya.com/static/media/logo.6ce24c58.svg"
+    "static/js/2.e5642694.chunk.js.LICENSE.txt": "/radityasurya.com/static/js/2.e5642694.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a76d2fd3.js",
     "static/js/2.e5642694.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.3984f762.chunk.js"
+    "static/js/main.f6780752.chunk.js"
   ]
 }
